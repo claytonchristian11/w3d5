@@ -20,6 +20,7 @@ end
 
 class BelongsToOptions < AssocOptions
   def initialize(name, options = {})
+    
     # ...
   end
 end
@@ -33,7 +34,7 @@ end
 module Associatable
   # Phase IIIb
   def belongs_to(name, options = {})
-    # ...
+
   end
 
   def has_many(name, options = {})
@@ -46,5 +47,5 @@ module Associatable
 end
 
 class SQLObject
-  # Mixin Associatable here...
+  extend Associatable
 end
